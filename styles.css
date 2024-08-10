@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #b9fbc0);
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.player-names {
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-names label {
+    font-weight: bold;
+    margin: 10px 10px;
+    color: #555;
+}
+
+.player-names input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 10px;
+    width: 70%;
+}
+
+.player-names button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.player-names button:hover {
+    background-color: #45a049;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    border: 3px solid #000;
+    border-radius: 12px;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f1f1f1;
+    border-color: #bbb;
+}
+
+.cell.x {
+    color: #ff5722;
+}
+
+.cell.o {
+    color: #2196F3;
+}
+
+.reset {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.reset:hover {
+    background-color: #e53935;
+}
+
+#status {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
